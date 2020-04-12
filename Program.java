@@ -10,7 +10,7 @@ public class Program {
     public static void main(String[] args) {
         Library lib1 = new Library("The little Library");
         boolean condition = true;
-        String key = "o";
+        
         while (condition) {
             showMenu();
             askOption();
@@ -20,7 +20,7 @@ public class Program {
                 case 1:
                     lib1.showLibraryInfo();
                     System.out.println("press any key to continue: ");
-                    key = scanner.nextLine();
+                    String key = scanner.nextLine();
                     break;
                 case 2:
                     lib1.addNewBook();
@@ -28,7 +28,6 @@ public class Program {
                     key = scanner.nextLine();
                     break;
                 case 3:
-                    int bookID;
                     lib1.findBook(0);
                     System.out.println("press any key to continue: ");
                     key = scanner.nextLine();
@@ -66,8 +65,8 @@ public class Program {
     }
 
     public static void askOption(){
-        Scanner in = new Scanner(System.in);
-        option = in.nextInt();
+        //Scanner In = new Scanner(System.in);
+        option = scanner.nextInt();
     }
 
 }

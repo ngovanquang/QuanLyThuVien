@@ -2,9 +2,6 @@ package oop.homework;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.lang.Math;
-
-import static java.lang.Math.random;
 
 public class Library {
     public final int Max_Number_Of_Books = 100;
